@@ -56,15 +56,13 @@ function Navbar() {
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li>
-          <Link to='/About' className='nav-link scrollto'>
-                    <Button buttonStyle='btn--primary' text="Contact"></Button>
-                  </Link>
-                  </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+      <Link to='/About' className='nav-link scrollto'>
+                    <Button buttonStyle='btn--primary' text="Contact"></Button>
+                  </Link>
 
     </div>
   </header>
