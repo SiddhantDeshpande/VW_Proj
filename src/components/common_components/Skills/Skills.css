@@ -1,0 +1,7 @@
+.specials .container{
+    text-align: left;
+}
+.specials .img-fluid {
+    height:230px;
+    object-fit: cover;
+}
