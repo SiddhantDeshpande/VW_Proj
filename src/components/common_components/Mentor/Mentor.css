@@ -1,0 +1,9 @@
+.chefs .container{
+    text-align: left;
+}
+.chefs{
+    padding-top: 150px;
+}
+.chefs .img-fluid{
+    height: 420px;
+}

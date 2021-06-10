@@ -33,7 +33,7 @@ function Navbar() {
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><Link to="/" class="nav-link scrollto active">Home</Link></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><Link to="/About" class="nav-link scrollto" href="#about">About</Link></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
           <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
           <li><a class="nav-link scrollto" href="#events">Events</a></li>

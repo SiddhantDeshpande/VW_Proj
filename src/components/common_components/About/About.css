@@ -1,0 +1,11 @@
+.about .content {
+    text-align: left;
+}
+.about .about-img img {
+    height:500px;
+    object-fit: cover;
+    width:700px;
+   }
+   /* .about .about-img {
+    width:500px;
+  } */

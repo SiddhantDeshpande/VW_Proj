@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
-import HomePage from "./HomePage"
-import Navbar from "../common_components/Navbar/Navbar"
+import HomePage from "./HomePage";
+import Navbar from "../common_components/Navbar/Navbar";
+import AboutUs from "./AboutUs";
 
 
 export class MainPage extends Component {
@@ -10,6 +11,7 @@ export class MainPage extends Component {
       <>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/About" component={AboutUs}/>
         </Switch>
        
         
