@@ -3,6 +3,7 @@ import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import HomePage from "./HomePage";
 import Navbar from "../common_components/Navbar/Navbar";
 import AboutUs from "./AboutUs";
+import Mywork from "./Mywork";
 
 
 export class MainPage extends Component {
@@ -12,6 +13,7 @@ export class MainPage extends Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/About" component={AboutUs}/>
+          <Route path="/Mywork" component={Mywork}/>
         </Switch>
        
         
