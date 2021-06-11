@@ -80,7 +80,10 @@ export const Tasks={
   Taskdesc:"This was one of my UX oriented tasks which involved the use of the design tool 'Sketch'. This task was done as a part of the PRN Wiki Project . The goal of this was to create a design system for future reference and easy access to symbols , thus improving the design efficiency . It involved creating and arranging symbols in an easily accessible manner , and prototyping the design according to individual user flows. The symbols created can be accessed easily and in turn improves the overall speed and efficiency of the design process. This task also involved creating user stories according to the individual users who were the target group for this project.The protoyping was done using the craft tool. I was under my senior Sanket Chaudhary for this task . ",
   Tasktwo:"Wireframe Development",
   Tasktech2:"ReactJS | HTML5 | CSS3 | Bootstrap5",
-  Taskdesc2:"This task was the first test of my knowledge about ReactJs ! I had been learning ReactJS for a month and this was my first time using it to develop something. This task involved development of a wireframe of PRN Wiki project . The requirements were that it should follow the ReactJS norms , that is everything should be made of components to improve efficiency and that the site should be responsive. This task was done under the supervision of my mentor Swati Sharma . After a few errors I successfully developed the wireframe as per the requirements using ReactJS and css ( to handle the responsive part ) "
+  Taskdesc2:"This task was the first test of my knowledge about ReactJs ! I had been learning ReactJS for a month and this was my first time using it to develop something. This task involved development of a wireframe of PRN Wiki project . The requirements were that it should follow the ReactJS norms , that is everything should be made of components to improve efficiency and that the site should be responsive. This task was done under the supervision of my mentor Swati Sharma . After a few errors I successfully developed the wireframe as per the requirements using ReactJS and css ( to handle the responsive part ) ",
+  Taskthree:"Pesse DB",
+    Tasktech:"",
+    Taskdesc3:"",
 }
 
 //Projectdata

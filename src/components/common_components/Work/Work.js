@@ -9,6 +9,9 @@ export const Work=({
     Tasktwo,
     Tasktech2,
     Taskdesc2,
+    Taskthree,
+    Tasktech3,
+    Taskdesc3,
 })=>{
     return (
         

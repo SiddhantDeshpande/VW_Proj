@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-// import { Context } from "../../Context";
+import { Context } from "../../Context";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Hero.css";
@@ -10,7 +10,7 @@ export const Hero = ({
   lightText,
   lightTextDesc,
 }) => {
-  // const [context, setContext] = useContext(Context);
+  const [context, setContext] = useContext(Context);
 
   return (
     <>
@@ -19,7 +19,7 @@ export const Hero = ({
       <div className="row">
         <div className="col-lg-8">
         <h1 className={lightText ? 'heading' : 'heading dark'}>
-                  {headline},<span> Here context will come </span>
+                  {headline},<span>{context}</span>
                 </h1>
                 <h2
                   className={

@@ -1,16 +1,23 @@
 
 import './App.css';
-import Hero from './components/common_components/Hero/Hero';
 import Navbar from './components/common_components/Navbar/Navbar';
-import MainPage from './components/Pages/MainPage';
+import React, { useState } from "react";
 import Footer from "./components/common_components/Footer/Footer";
+import { Context } from "./components/Context";
+import AlphaPage from './components/Pages/AlphaPage';
+import MainPage from './components/Pages/MainPage';
 
 function App() {
+
+  const [context, setContext] = useState("");
   return (
     <div className="App">
+      <Context.Provider value={[context, setContext]}>
    <Navbar/>
-   <MainPage/>
+   <AlphaPage/>
+   {/* <MainPage/> */}
    <Footer/>
+   </Context.Provider>
     </div>
   );
 }
