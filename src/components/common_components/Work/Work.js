@@ -11,7 +11,7 @@ export const Work=({
     Taskdesc2,
 })=>{
     return (
-        <div>
+        
             <section id="events" class="events">
       <div class="container" data-aos="fade-up">
 
@@ -96,7 +96,7 @@ export const Work=({
 
       </div>
     </section>
-        </div>
+        
     )
 }
 
