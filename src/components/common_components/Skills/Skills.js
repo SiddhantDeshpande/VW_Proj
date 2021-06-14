@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { allSkills } from '../../Data/Data';
 import "./Skills.css";
 
 export const Skills = ({
@@ -57,15 +58,33 @@ export const Skills = ({
           </div>
           <div class="col-lg-9 mt-4 mt-lg-0">
             <div class="tab-content">
+
+{/* 
+            {
+            allSkills.map((item,i)=>
+            <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>{item.Skillname}</h3>
+                    <p class="fst-italic">{item.Skillitalics}</p>
+                    <p>{item.Skilldata}</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src={item.Skillimg} alt="" class="img-fluid"/>
+                  </div>
+                </div>
+              </div>
+            )
+          } */}
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>{Skillone}</h3>
-                    <p class="fst-italic">{Skilloneitalics}</p>
-                    <p>{Skillonedata}</p>
+                    <h3>{allSkills[0].Skillname}</h3>
+                    <p class="fst-italic">{allSkills[0].Skillitalics}</p>
+                    <p>{allSkills[0].Skilldata}</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src={Skillimg} alt="" class="img-fluid"/>
+                    <img src={allSkills[0].Skillimg} alt="" class="img-fluid"/>
                   </div>
                 </div>
               </div>

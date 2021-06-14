@@ -7,7 +7,8 @@ function Mywork() {
     return (
         <div>
             <Project {...Projects}/>
-            <Work {...Tasks}/>
+            {/* <Work {...Tasks}/> */}
+            <Work/>
         </div>
     )
 }

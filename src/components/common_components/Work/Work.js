@@ -1,18 +1,19 @@
 import React from 'react'
 import "./Work.css";
+import {alltasks} from "../../Data/Data";
 
-export const Work=({
-    Taskone,
-    Tasktech,
-    Taskdesc,
-    Taskproject,
-    Tasktwo,
-    Tasktech2,
-    Taskdesc2,
-    Taskthree,
-    Tasktech3,
-    Taskdesc3,
-})=>{
+function Work()
+    // Taskone,
+    // Tasktech,
+    // Taskdesc,
+    // Taskproject,
+    // Tasktwo,
+    // Tasktech2,
+    // Taskdesc2,
+    // Taskthree,
+    // Tasktech3,
+    // Taskdesc3,
+{
     return (
         
             <section id="events" class="events">
@@ -32,15 +33,15 @@ export const Work=({
                   <img src="assets/img/sample_design.png" class="img-fluid" alt=""/>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>{Taskone}</h3>
+                  <h3>{alltasks[0].Taskname}</h3>
                   <div class="price">
-                    <p><span>{Tasktech}</span></p>
+                    <p><span>{alltasks[0].Tasktech}</span></p>
                   </div>
                   <p class="fst-italic">
-                   {Taskproject}
+                   {alltasks[0].Taskproject}
                   </p>
                   <p>
-                    {Taskdesc}
+                    {alltasks[0].Taskdesc}
                   </p>
                 </div>
               </div>
@@ -52,15 +53,15 @@ export const Work=({
                   <img src="assets/img/Wireframe.png" class="img-fluid" alt=""/>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>{Tasktwo}</h3>
+                  <h3>{alltasks[1].Taskname}</h3>
                   <div class="price">
-                    <p><span>{Tasktech2}</span></p>
+                    <p><span>{alltasks[1].Tasktech}</span></p>
                   </div>
                   <p class="fst-italic">
-                    {Taskproject}
+                  {alltasks[1].Taskproject}
                   </p>
                   <p>
-                    {Taskdesc2}
+                  {alltasks[1].Taskdesc}
                   </p>
                 </div>
               </div>

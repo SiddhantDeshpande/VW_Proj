@@ -14,8 +14,8 @@ function App() {
     <div className="App">
       <Context.Provider value={[context, setContext]}>
    <Navbar/>
-   <AlphaPage/>
-   {/* <MainPage/> */}
+   {/* <AlphaPage/> */}
+   <MainPage/>
    <Footer/>
    </Context.Provider>
     </div>
