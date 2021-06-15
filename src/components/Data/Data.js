@@ -7,40 +7,48 @@ export const homeObjOne = {
 };
 
 // SkillsData
-export const allSkills=[
+export const allSkills = [
   {
-    Skillname:"ReactJs",
-    Skillimg:"https://hackernoon.com/images/z2xg2bpo.jpg",
-    Skillitalics:"A JavaScript library for building user interfaces",
-    Skilldata:"React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.Build encapsulated components that manage their own state, then compose them to make complex UIs."
+    Skillname: "ReactJs",
+    Skillimg: "https://hackernoon.com/images/z2xg2bpo.jpg",
+    Skillitalics: "A JavaScript library for building user interfaces",
+    Skilldata:
+      "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.Build encapsulated components that manage their own state, then compose them to make complex UIs.",
   },
   {
-    Skillname:"HTML 5",
-    Skillimg:"https://growtraffic-bc85.kxcdn.com/blog/wp-content/uploads/2019/03/HTML5-Ads.jpg",
-    Skillitalics:"HTML is the standard markup language for creating Web pages.",
-    Skilldata:"React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.Build encapsulated components that manage their own state, then compose them to make complex UIs." 
+    Skillname: "HTML 5",
+    Skillimg:
+      "https://growtraffic-bc85.kxcdn.com/blog/wp-content/uploads/2019/03/HTML5-Ads.jpg",
+    Skillitalics:
+      "HTML is the standard markup language for creating Web pages.",
+    Skilldata:
+      "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.Build encapsulated components that manage their own state, then compose them to make complex UIs.",
   },
   {
-    Skillname:"CSS 3",
-    Skillimg:"https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg",
-    Skillitalics:"CSS is the language we use to style a Web page.",
-    Skilldata:"CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content."
+    Skillname: "CSS 3",
+    Skillimg:
+      "https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg",
+    Skillitalics: "CSS is the language we use to style a Web page.",
+    Skilldata:
+      "CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content.",
   },
   {
-    Skillname:"Bootstrap 5",
-    Skillimg:"https://blog.getbootstrap.com/assets/img/2020/06/v5-new-logo.png",
-    Skillitalics:"Build fast, responsive sites with Bootstrap",
-    Skilldata:"Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins."
+    Skillname: "Bootstrap 5",
+    Skillimg:
+      "https://blog.getbootstrap.com/assets/img/2020/06/v5-new-logo.png",
+    Skillitalics: "Build fast, responsive sites with Bootstrap",
+    Skilldata:
+      "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
   },
   {
-    Skillname:"React-Bootstrap",
-    Skillimg:"https://www.educative.io/api/page/5816757605367808/image/download/5327498687545344",
-    Skillitalics:"The most popular front-end framework Rebuilt for React",
-    Skilldata:"React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery. As one of the oldest React libraries, React-Bootstrap has evolved and grown alongside React, making it an excellent choice as your UI foundation."
-  }
-]
-
-
+    Skillname: "React-Bootstrap",
+    Skillimg:
+      "https://www.educative.io/api/page/5816757605367808/image/download/5327498687545344",
+    Skillitalics: "The most popular front-end framework Rebuilt for React",
+    Skilldata:
+      "React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery. As one of the oldest React libraries, React-Bootstrap has evolved and grown alongside React, making it an excellent choice as your UI foundation.",
+  },
+];
 
 export const Skillsone = {
   Skillone: "ReactJs",
@@ -117,29 +125,40 @@ export const Mentordata = {
     "https://ca.slack-edge.com/E01GZSTQXMY-UR98YT6UQ-185a2d3c36c4-512",
 };
 
-//My work data
-// export const Tasks={
-//   Taskone:"Design System",
-//   Tasktech:"UX : Sketch ",
-//   Taskproject:"PRN WIKI",
-//   Taskdesc:"This was one of my UX oriented tasks which involved the use of the design tool 'Sketch'. This task was done as a part of the PRN Wiki Project . The goal of this was to create a design system for future reference and easy access to symbols , thus improving the design efficiency . It involved creating and arranging symbols in an easily accessible manner , and prototyping the design according to individual user flows. The symbols created can be accessed easily and in turn improves the overall speed and efficiency of the design process. This task also involved creating user stories according to the individual users who were the target group for this project.The protoyping was done using the craft tool. I was under my senior Sanket Chaudhary for this task . ",
-//   Tasktwo:"Wireframe Development",
-//   Tasktech2:"ReactJS | HTML5 | CSS3 | Bootstrap5",
-//   Taskdesc2:"This task was the first test of my knowledge about ReactJs ! I had been learning ReactJS for a month and this was my first time using it to develop something. This task involved development of a wireframe of PRN Wiki project . The requirements were that it should follow the ReactJS norms , that is everything should be made of components to improve efficiency and that the site should be responsive. This task was done under the supervision of my mentor Swati Sharma . After a few errors I successfully developed the wireframe as per the requirements using ReactJS and css ( to handle the responsive part ) ",
-//   Taskthree:"Pesse DB",
-//     Tasktech:"",
-//     Taskdesc3:"",
-// }
+export const allMentors=[
+  {
+    Mentorname: "Swati Sharma",
+    Mentortitle:"Mentor1",
+    Mentorimg:""
+  },
+  {
+    Mentorname: "Avinash Saini",
+    Mentortitle:"Software Engineer at VWITS",
+    Mentorimg:"https://ca.slack-edge.com/E01GZSTQXMY-UR98YT6UQ-185a2d3c36c4-512"
+  },
+  {
+    Mentorname: "Sanket Chaudhary",
+    Mentortitle:"UX / Interaction / Product Designer at VWITS",
+    Mentorimg:""
+  },
+
+]
 
 //Projectdata
-export const Projects = {
-  Project1: "UX - PRN Wiki",
-  Project2: "PRN Wiki",
-  Project3: "Presse DB",
-  Pro1desc: "",
-  Pro2desc: "",
-  Pro3desc: "",
-};
+export const Projects = [
+  {
+    Projectname: "UX - PRN Wiki",
+    Projectdescription: "",
+  },
+  {
+    Projectname: "PRN Wiki",
+    Projectdescription: "",
+  },
+  {
+    Projectname: "Presse DB",
+    Projectdescription: "",
+  },
+];
 
 //My Work Data
 export const alltasks = [
@@ -149,6 +168,7 @@ export const alltasks = [
     Taskproject: "PRN Wiki",
     Taskdesc:
       "This was one of my UX oriented tasks which involved the use of the design tool 'Sketch'. This task was done as a part of the PRN Wiki Project . The goal of this was to create a design system for future reference and easy access to symbols , thus improving the design efficiency . It involved creating and arranging symbols in an easily accessible manner , and prototyping the design according to individual user flows. The symbols created can be accessed easily and in turn improves the overall speed and efficiency of the design process. This task also involved creating user stories according to the individual users who were the target group for this project.The protoyping was done using the craft tool. I was under my senior Sanket Chaudhary for this task . ",
+    Taskimg: "assets/img/sample_design.png",
   },
   {
     Taskname: "Wireframe Development",
@@ -156,5 +176,6 @@ export const alltasks = [
     Taskproject: "PRN Wiki",
     Taskdesc:
       "this task was the first test of my knowledge about ReactJs ! I had been learning ReactJS for a month and this was my first time using it to develop something. This task involved development of a wireframe of PRN Wiki project . The requirements were that it should follow the ReactJS norms , that is everything should be made of components to improve efficiency and that the site should be responsive. This task was done under the supervision of my mentor Swati Sharma . After a few errors I successfully developed the wireframe as per the requirements using ReactJS and css ( to handle the responsive part ) ",
+    Taskimg: "assets/img/Wireframe.png",
   },
 ];
