@@ -88,18 +88,23 @@ export const Skills = ({
                   </div>
                 </div>
               </div>
+
+              {/* {
+                allSkills.map((items,i)=>(
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>{Skilltwo}</h3>
-                    <p class="fst-italic">{Skilltwoitalics}</p>
-                    <p>{Skilltwodata}</p>
+                    <h3>{allSkills[i].Skillname}</h3>
+                    <p class="fst-italic">{allSkills[i].Skillitalics}</p>
+                    <p>{allSkills[i].Skilldata}</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src={Skilltwoimg} alt="" class="img-fluid"/>
+                    <img src={allSkills[i].Skillimg} alt="" class="img-fluid"/>
                   </div>
                 </div>
               </div>
+    ))
+  } */}
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -136,6 +141,7 @@ export const Skills = ({
                   </div>
                 </div>
               </div>
+  
             </div>
           </div>
         </div>
