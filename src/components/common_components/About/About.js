@@ -24,6 +24,7 @@ export const About = ({
               <p class="fst-italic">{Aboutint[number].AboutVw}</p>
               <h3>{Aboutint[number].Aboutsubtitle}</h3>
 
+
               {points.map((items, i) => (
                 <ul>
                   <li>{points[i].pointval}</li>
