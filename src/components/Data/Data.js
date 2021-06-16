@@ -92,57 +92,61 @@ export const Skillsfive = {
 };
 
 // About Internship data
-export const Aboutint = {
-  AboutTitle: "About Volkswagen!",
-  AboutTitle2: "VWITS is equipped with the latest competencies in -",
-  Aboutimg:
-    "https://images.unsplash.com/photo-1595617524817-3f0f8f0cad26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80",
-  AboutVw:
-    "VW IT Services India is the internal division of the VW Group offering digital solutions, application development and product innovation. We manage delivery, technology competencies, software assistance and process automation resources for the mobility domain. Envisaging a future as the best Software development and IT services organization in the Volkswagen Group.",
-  pointone: "Machine Learning",
-  pointtwo: "Cloud Computing",
-  pointthree: "Artificial intelligence",
-  pointfour: "Java, SAP and Microsoft",
-  pointfive: "Blockchain",
-};
-export const Aboutme = {
-  AboutTitle: "About Me!",
-  AboutVw:
-    "Hi , im a 20 year old trying to learn and experience new things in life. lol lmao . content sochna padega oof",
-  Aboutimg:
-    "https://media-exp3.licdn.com/dms/image/C5635AQHeOcH2C-cNQQ/profile-framedphoto-shrink_400_400/0/1619884461329?e=1623416400&v=beta&t=ip2KPbtVQbVZYRyMqyhLPU8j8SNRwmUgi6-RQKMD6bU",
-};
+export const Aboutint = [
+  {
+    AboutTitle: "About Volkswagen!",
+    Aboutsubtitle: "VWITS is equipped with the latest competencies in -",
+    Aboutimg:
+      "https://images.unsplash.com/photo-1595617524817-3f0f8f0cad26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80",
+    AboutVw:
+      "VW IT Services India is the internal division of the VW Group offering digital solutions, application development and product innovation. We manage delivery, technology competencies, software assistance and process automation resources for the mobility domain. Envisaging a future as the best Software development and IT services organization in the Volkswagen Group.",
+  },
+  {
+    AboutTitle: "About Me!",
+    AboutVw:
+      "Hi , im a 20 year old trying to learn and experience new things in life. lol lmao . content sochna padega oof",
+    Aboutimg:
+      "https://media-exp3.licdn.com/dms/image/C5635AQHeOcH2C-cNQQ/profile-framedphoto-shrink_400_400/0/1619884461329?e=1623416400&v=beta&t=ip2KPbtVQbVZYRyMqyhLPU8j8SNRwmUgi6-RQKMD6bU",
+  },
+];
+export const points = [
+  {
+    pointval: "Machine Learning",
+  },
+  {
+    pointval: "Cloud Computing",
+  },
+  {
+    pointval: "Artificial intelligence",
+  },
+  {
+    pointval: "Java, SAP and Microsoft",
+  },
+  {
+    pointval: "Blockchain",
+  },
+];
 
 //Mentor data
-export const Mentordata = {
-  Mentorname: "Swati Sharma",
-  Mentortwoname: "Avinash Saini",
-  Mentorthreename: "Sanket Chaudhary",
-  Mentortitle: "Mentor1",
-  Mentortwotitle: "Software Engineer at VWITS",
-  Mentorthreetitle: "UX / Interaction / Product Designer at VWITS",
-  Mentortwoimg:
-    "https://ca.slack-edge.com/E01GZSTQXMY-UR98YT6UQ-185a2d3c36c4-512",
-};
 
-export const allMentors=[
+export const allMentors = [
   {
     Mentorname: "Swati Sharma",
-    Mentortitle:"Mentor1",
-    Mentorimg:""
+    Mentortitle: "Mentor1",
+    Mentorimg: "",
   },
   {
     Mentorname: "Avinash Saini",
-    Mentortitle:"Software Engineer at VWITS",
-    Mentorimg:"https://ca.slack-edge.com/E01GZSTQXMY-UR98YT6UQ-185a2d3c36c4-512"
+    Mentortitle: "Software Engineer at VWITS",
+    Mentorimg:
+      "https://ca.slack-edge.com/E01GZSTQXMY-UR98YT6UQ-185a2d3c36c4-512",
   },
   {
     Mentorname: "Sanket Chaudhary",
-    Mentortitle:"UX / Interaction / Product Designer at VWITS",
-    Mentorimg:""
+    Mentortitle: "UX / Interaction / Product Designer at VWITS",
+    Mentorimg: "",
   },
-
-]
+];
 
 //Projectdata
 export const Projects = [

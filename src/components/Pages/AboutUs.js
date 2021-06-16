@@ -6,8 +6,8 @@ import {Aboutme, Mentordata} from "../Data/Data";
 function AboutUs() {
     return (
         <div>
-            <Mentor {...Mentordata}/>
-            <About {...Aboutme}/>
+            <Mentor/>
+            <About number="1"/>
             
         </div>
     )

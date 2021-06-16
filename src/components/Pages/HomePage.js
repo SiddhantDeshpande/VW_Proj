@@ -9,7 +9,7 @@ function HomePage() {
     return (
         <div>
             <Hero {...homeObjOne}/>
-            <About {...Aboutint}/>
+            <About number="0"/>
             <Skills {...Skillsone}{...Skillstwo}{...Skillsthree}{...Skillsfour}{...Skillsfive}/>
         </div>
     )
