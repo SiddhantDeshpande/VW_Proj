@@ -3,15 +3,6 @@ import { Aboutint, points } from "../../Data/Data";
 import "./About.css";
 
 export const About = ({
-  AboutTitle,
-  AboutTitle2,
-  AboutVw,
-  Aboutimg,
-  pointone,
-  pointtwo,
-  pointthree,
-  pointfour,
-  pointfive,
   number,
 }) => {
   return (
