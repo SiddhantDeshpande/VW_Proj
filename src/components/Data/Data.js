@@ -113,7 +113,7 @@ export const allMentors = [
   {
     Mentorname: "Sanket Chaudhary",
     Mentortitle: "UX / Interaction / Product Designer at VWITS",
-    Mentorimg: "",
+    Mentorimg: "assets/img/Sanket sir.jpeg",
   },
 ];
 

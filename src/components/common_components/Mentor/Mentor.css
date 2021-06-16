@@ -6,4 +6,5 @@
 }
 .chefs .img-fluid{
     height: 420px;
+    object-fit: cover;
 }

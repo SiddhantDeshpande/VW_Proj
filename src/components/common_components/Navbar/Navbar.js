@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Link, Route, Switch, NavLink} from "react-router-dom";
 import Button from "../Button/Button";
 
 function Navbar() {
@@ -30,9 +30,9 @@ function Navbar() {
   
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><Link to="/" class="nav-link scrollto active">Home</Link></li>
-          <li><Link to="/About" class="nav-link scrollto" href="#about">About</Link></li>
-          <li><Link to="/Mywork"class="nav-link scrollto" href="#events">My Work</Link></li>
+          <li><NavLink activeClassName="active" to="/" class="nav-link scrollto">Home</NavLink></li>
+          <li><NavLink activeClassName="active" to="/About" class="nav-link scrollto" href="#about">About</NavLink></li>
+          <li><NavLink activeClassName="active" to="/Mywork"class="nav-link scrollto" href="#events">My Work</NavLink></li>
           {/* <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
