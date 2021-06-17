@@ -6,10 +6,13 @@ import Footer from "./components/common_components/Footer/Footer";
 import { Context } from "./components/Context";
 import AlphaPage from './components/Pages/AlphaPage';
 import MainPage from './components/Pages/MainPage';
+import Cookies from "js-cookie";
 
 function App() {
 
   const [context, setContext] = useState("");
+ 
+
   return (
     <div className="App">
       <Context.Provider value={[context, setContext]}>

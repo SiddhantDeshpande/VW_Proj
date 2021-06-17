@@ -1,7 +1,9 @@
+import Cookies from "js-cookie";
 import React, { useContext, useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import { Context } from "../../Context";
 import "./LoginPage.css";
+
 
 
 function LoginPage({ Login, error }) {
@@ -16,6 +18,8 @@ function LoginPage({ Login, error }) {
   const [isAuth, setisAuth] = useState(false);
   const handleClick = (e) => {
     setisAuth(true);
+    Cookies.set("name","logintrue")
+
   };
 
   return (

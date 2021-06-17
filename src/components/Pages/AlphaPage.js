@@ -2,6 +2,7 @@ import Idletimer from "./Idletimer";
 import React, { useState } from "react";
 import LoginPage from "./LoginPage/LoginPage";
 import { Context } from "../Context";
+import Cookies from "js-cookie";
 
 function AlphaPage() {
   const adminUser = {
@@ -29,6 +30,20 @@ function AlphaPage() {
     }
   };
   const [context, setContext] = useState("");
+
+
+  // const [isAuth, setisAuth] = useState(false);
+  // const readCookie = () =>{
+  //   const name=Cookies.get("name");
+  //   if(name){
+  //     setisAuth(true);
+
+  //   }
+  // }
+  // React.useEffect(()=>{
+  //   readCookie();
+  // },[])
+
 
   return (
     <div className="AlphaPage">
