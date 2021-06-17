@@ -9,3 +9,6 @@
    /* .about .about-img {
     width:500px;
   } */
+  .about{
+    background: url("https://images.unsplash.com/photo-1610480313684-897be1b6e79b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80") center center;
+  }
