@@ -29,7 +29,7 @@ function Navbar() {
               <li>
                 <NavLink
                   activeClassName="active"
-                  to="/"
+                  to="/home"
                   class="nav-link scrollto"
                 >
                   Home
