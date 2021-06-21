@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter, Link, Route, Switch, NavLink } from "react-router-dom";
+import AboutUs from "../../Pages/AboutUs";
+import HomePage from "../../Pages/HomePage";
+import Mywork from "../../Pages/Mywork";
 import Button from "../Button/Button";
 
 function Navbar() {
@@ -29,7 +32,7 @@ function Navbar() {
               <li>
                 <NavLink
                   activeClassName="active"
-                  to="/home"
+                  to="/"
                   class="nav-link scrollto"
                 >
                   Home
@@ -63,6 +66,7 @@ function Navbar() {
           </Link>
         </div>
       </header>
+      
     </div>
   );
 }

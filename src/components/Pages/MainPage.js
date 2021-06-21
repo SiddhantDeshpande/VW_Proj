@@ -1,50 +1,53 @@
-import React, { Component } from "react";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
-import HomePage from "./HomePage";
+import React, { useState, useRef, useContext } from "react";
+import IdleTimer from "react-idle-timer";
+import Modal from "react-modal";
+import { Context } from "../Context";
+import { Redirect } from "react-router-dom";
 import Navbar from "../common_components/Navbar/Navbar";
-import AboutUs from "./AboutUs";
-import Mywork from "./Mywork";
-import AlphaPage from "./AlphaPage";
+import Trialpage from "./Trialpage";
+import Footer from "../common_components/Footer/Footer";
 
+function MainPage() {
+  const [context, setContext] = useContext(Context);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [modalisopen, setmodalisopen] = useState(false);
+  const idleref = useRef(null);
+  const sessionref = useRef(null);
+  const onIdle = () => {
+    console.log("user is Idle");
+    setmodalisopen(true);
+    sessionref.current = setTimeout(Logout, 5000); // to log out if the user is isle even after popout
+  };
+  const active = () => {
+    setmodalisopen(false);
+    clearTimeout(sessionref.current); //stops timer if user moves
+  };
+  const Logout = () => {
+    setmodalisopen(false);
+    setIsLoggedIn(false);
+    clearTimeout(sessionref.current);
+  };
 
-export class MainPage extends Component {
-  render() {
+  if (isLoggedIn) {
     return (
       <>
-      
-<HomePage/>
-         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/About" component={AboutUs}/>
-          <Route path="/Mywork" component={Mywork}/>
-          
-          
-        </Switch>
-           {/* <Switch>
-         
-          <Route exact path="/home" component={HomePage} />
-          <Route path="/About" component={AboutUs}/>
-          <Route path="/Mywork" component={Mywork}/>
-          
-        </Switch> */}
-        
-        {/* <Home/> */}
-          {/* <div>
-            <Link to="/">Home</Link>
-            <Link to="/About">About</Link>
-            <Link to="/Contact">Contact</Link>
-          </div>
+        <Navbar />
+        <Trialpage />
+        <Footer />
+        <Modal isOpen={modalisopen}>
+          <h2>You have been idle</h2>
+          <p>you will be logged out</p>
           <div>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/About" component={About} />
-              <Route path="/Contact" component={Contact} />
-            </Switch>
-          </div> */}
+            <button onClick={Logout}>logout</button>
 
+            <button onClick={active}>stay logged in</button>
+          </div>
+        </Modal>
+        <IdleTimer ref={idleref} timeout={5 * 1000} onIdle={onIdle}></IdleTimer>
       </>
     );
   }
+  return <Redirect to="/" />;
 }
 
 export default MainPage;
