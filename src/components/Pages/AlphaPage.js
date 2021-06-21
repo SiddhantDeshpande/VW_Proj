@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LoginPage from "./LoginPage/LoginPage";
 import { Context } from "../Context";
 import { Redirect } from "react-router-dom";
+import MainPage from "./MainPage";
 
 function AlphaPage() {
   const adminUser = {
@@ -35,7 +36,8 @@ function AlphaPage() {
       <div>
         <Context.Provider value={[context, setContext]}>
           {user.email != "" ? (
-            <Redirect to="/MainPage" />
+            <Redirect to="MainPage/" />
+           
           ) : (
             <LoginPage Login={Login} error={error} />
           )}

@@ -6,6 +6,10 @@ import { Redirect } from "react-router-dom";
 import Navbar from "../common_components/Navbar/Navbar";
 import Trialpage from "./Trialpage";
 import Footer from "../common_components/Footer/Footer";
+import AboutUs from "./AboutUs";
+import Mywork from "./Mywork";
+import HomePage from "./HomePage";
+import { Switch , Route} from "react-router-dom"
 
 function MainPage() {
   const [context, setContext] = useContext(Context);
@@ -32,7 +36,13 @@ function MainPage() {
     return (
       <>
         <Navbar />
-        <Trialpage />
+        <Switch>
+          {/* <Trialpage/> */}
+        <Route path="/MainPage/About" component={AboutUs}/>
+          <Route path="/MainPage/Mywork" component={Mywork}/>
+          <Route exact path="/MainPage/" component={HomePage} />
+         
+        </Switch>
         <Footer />
         <Modal isOpen={modalisopen}>
           <h2>You have been idle</h2>

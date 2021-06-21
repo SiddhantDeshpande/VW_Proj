@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Switch, NavLink } from "react-router-dom";
+import { BrowserRouter, Link, Route, Switch, NavLink ,useRouteMatch } from "react-router-dom";
 import AboutUs from "../../Pages/AboutUs";
 import HomePage from "../../Pages/HomePage";
 import Mywork from "../../Pages/Mywork";
 import Button from "../Button/Button";
 
 function Navbar() {
+  let { path, url } = useRouteMatch();
   return (
     <div>
       <div id="topbar" class="d-flex align-items-center fixed-top">
@@ -32,7 +33,7 @@ function Navbar() {
               <li>
                 <NavLink
                   activeClassName="active"
-                  to="/"
+                  to="/Mainpage/"
                   class="nav-link scrollto"
                 >
                   Home
@@ -41,7 +42,7 @@ function Navbar() {
               <li>
                 <NavLink
                   activeClassName="active"
-                  to="/About"
+                  to="/MainPage/About"
                   class="nav-link scrollto"
                   href="#about"
                 >
@@ -51,7 +52,7 @@ function Navbar() {
               <li>
                 <NavLink
                   activeClassName="active"
-                  to="/Mywork"
+                  to="/MainPage/Mywork"
                   class="nav-link scrollto"
                   href="#events"
                 >
