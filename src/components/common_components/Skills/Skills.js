@@ -7,20 +7,20 @@ function Skills() {
   return (
     <div>
       <section id="specials" className="specials">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
+        <div className="container" data-aos="fade-up">
+          <div className="section-title">
             <h2>Skills</h2>
             <p>Skills used for development</p>
           </div>
 
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-3">
-              <ul class="nav nav-tabs flex-column">
+          <div className="row" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-lg-3">
+              <ul className="nav nav-tabs flex-column">
                 {allSkills.map((items, i) => (
-                  <li class="nav-item">
+                  <li key={i} className="nav-item">
                     <Link
                       to={allSkills[i].navtabs}
-                      class={"nav-link " + (i == 0 ? "active" : "")}
+                      className={"nav-link " + (i === 0 ? "active" : "")}
                       data-bs-toggle="tab"
                     >
                       {allSkills[i].Skillname}
@@ -29,21 +29,21 @@ function Skills() {
                 ))}
               </ul>
             </div>
-            <div class="col-lg-9 mt-4 mt-lg-0">
-              <div class="tab-content">
+            <div className="col-lg-9 mt-4 mt-lg-0">
+              <div className="tab-content">
                 {allSkills.map((item, i) => (
-                  <div
-                    class={"tab-pane " + (i == 0 ? "active" : "")}
+                  <div key={i}
+                    className={"tab-pane " + (i === 0 ? "active" : "")}
                     id={allSkills[i].tabid}
                   >
-                    <div class="row">
-                      <div class="col-lg-8 details order-2 order-lg-1">
+                    <div className="row">
+                      <div className="col-lg-8 details order-2 order-lg-1">
                         <h3>{allSkills[i].Skillname}</h3>
-                        <p class="fst-italic">{item.Skillitalics}</p>
+                        <p className="fst-italic">{item.Skillitalics}</p>
                         <p>{item.Skilldata}</p>
                       </div>
-                      <div class="col-lg-4 text-center order-1 order-lg-2">
-                        <img src={item.Skillimg} alt="" class="img-fluid" />
+                      <div className="col-lg-4 text-center order-1 order-lg-2">
+                        <img src={item.Skillimg} alt="" className="img-fluid" />
                       </div>
                     </div>
                   </div>

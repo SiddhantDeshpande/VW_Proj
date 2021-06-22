@@ -1,18 +1,15 @@
-import React, { useState, useRef, useContext } from "react";
+import React, { useState, useRef} from "react";
 import IdleTimer from "react-idle-timer";
 import Modal from "react-modal";
-import { Context } from "../Context";
 import { Redirect } from "react-router-dom";
 import Navbar from "../common_components/Navbar/Navbar";
-import Trialpage from "./Trialpage";
 import Footer from "../common_components/Footer/Footer";
 import AboutUs from "./AboutUs";
 import Mywork from "./Mywork";
 import HomePage from "./HomePage";
-import { Switch , Route} from "react-router-dom"
+import { Switch, Route } from "react-router-dom";
 
 function MainPage() {
-  const [context, setContext] = useContext(Context);
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [modalisopen, setmodalisopen] = useState(false);
   const idleref = useRef(null);
@@ -37,11 +34,9 @@ function MainPage() {
       <>
         <Navbar />
         <Switch>
-          {/* <Trialpage/> */}
-        <Route path="/MainPage/About" component={AboutUs}/>
-          <Route path="/MainPage/Mywork" component={Mywork}/>
+          <Route path="/MainPage/About" component={AboutUs} />
+          <Route path="/MainPage/Mywork" component={Mywork} />
           <Route exact path="/MainPage/" component={HomePage} />
-         
         </Switch>
         <Footer />
         <Modal isOpen={modalisopen}>
@@ -53,7 +48,11 @@ function MainPage() {
             <button onClick={active}>stay logged in</button>
           </div>
         </Modal>
-        <IdleTimer ref={idleref} timeout={5 * 1000} onIdle={onIdle}></IdleTimer>
+        <IdleTimer
+          ref={idleref}
+          timeout={180 * 1000}
+          onIdle={onIdle}
+        ></IdleTimer>
       </>
     );
   }

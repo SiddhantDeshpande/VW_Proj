@@ -4,9 +4,6 @@ import Modal from "react-modal";
 import { Context } from "../Context";
 import MainPage from "./MainPage";
 import AlphaPage from "./AlphaPage";
-import HomePage from "./HomePage";
-import AboutUs from "./AboutUs";
-import Mywork from "./Mywork";
 
 Modal.setAppElement("#root");
 
@@ -34,10 +31,7 @@ function Idletimer() {
     return (
       <>
         <MainPage></MainPage>
-        {/* {HomePage}
-        {AboutUs}
-        {Mywork} */}
-      
+
         <Modal isOpen={modalisopen}>
           <h2>You have been idle</h2>
           <p>you will be logged out</p>
@@ -47,12 +41,12 @@ function Idletimer() {
             <button onClick={active}>stay logged in</button>
           </div>
         </Modal>
-        <IdleTimer ref={idleref} timeout={5 * 1000} onIdle={onIdle}></IdleTimer> 
+        <IdleTimer ref={idleref} timeout={5 * 1000} onIdle={onIdle}></IdleTimer>
         {/* 3mins */}
       </>
     );
   }
-  return <AlphaPage/>;
+  return <AlphaPage />;
 }
 
 export default Idletimer;

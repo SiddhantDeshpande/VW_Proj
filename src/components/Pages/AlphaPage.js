@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import LoginPage from "./LoginPage/LoginPage";
 import { Context } from "../Context";
 import { Redirect } from "react-router-dom";
-import MainPage from "./MainPage";
 
 function AlphaPage() {
   const adminUser = {
     email: "sid@email.com",
     password: "12345sid",
   };
+  const [context, setContext] = useState("");
   const [user, setUser] = useState({ name: "", email: "" });
   const [error, setError] = useState("");
   const Login = (details) => {
     console.log(details);
 
     if (
-      details.email == adminUser.email &&
-      details.password == adminUser.password
+      details.email === adminUser.email &&
+      details.password === adminUser.password
     ) {
       console.log("logged in");
       setUser({
@@ -29,13 +29,13 @@ function AlphaPage() {
       setError("incorrect details");
     }
   };
-  const [context, setContext] = useState("");
+  
 
   return (
     <div className="AlphaPage">
       <div>
         <Context.Provider value={[context, setContext]}>
-          {user.email != "" ? (
+          {user.email !== "" ? (
             <Redirect to="MainPage/" />
            
           ) : (

@@ -1,10 +1,5 @@
-import Cookies from "js-cookie";
-import React, { useContext, useState } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import { Context } from "../../Context";
+import React, {useState } from "react";
 import "./LoginPage.css";
-
-
 
 function LoginPage({ Login, error }) {
   const [Details, setDetails] = useState({ name: "", email: "", password: "" });
@@ -13,13 +8,11 @@ function LoginPage({ Login, error }) {
     Login(Details);
   };
 
-  const [context, setContext] = useContext(Context);
+  
   const [user, setUser] = useState({ name: "", email: "" });
   const [isAuth, setisAuth] = useState(false);
   const handleClick = (e) => {
     setisAuth(true);
-    Cookies.set("name","logintrue")
-
   };
 
   return (
@@ -34,54 +27,52 @@ function LoginPage({ Login, error }) {
           <div className="formbox">
             <h2>Login</h2>
             <div className="errormessage">
-            <h3>
-            {error != "" ? <div className="error">{error}</div> : ""}
-            </h3>
+              <h3>{error !== "" ? <div className="error">{error}</div> : ""}</h3>
             </div>
             <form onSubmit={submitHandler}>
-                <div className="inputbox">
-                  <label htmlFor="name">Name:</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    onChange={(e) =>
-                      setDetails({ ...Details, name: e.target.value })
-                    }
-                    value={Details.name}
-                  />
-                </div>
-                <div className="inputbox">
-                  <label htmlFor="email">Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    onChange={(e) =>
-                      setDetails({ ...Details, email: e.target.value })
-                    }
-                    value={Details.email}
-                  />
-                </div>
-                <div className="inputbox">
-                  <label htmlFor="password">Password:</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    onChange={(e) =>
-                      setDetails({ ...Details, password: e.target.value })
-                    }
-                    value={Details.password}
-                  />
-                </div>
-                <div className="inputbox">
+              <div className="inputbox">
+                <label htmlFor="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  onChange={(e) =>
+                    setDetails({ ...Details, name: e.target.value })
+                  }
+                  value={Details.name}
+                />
+              </div>
+              <div className="inputbox">
+                <label htmlFor="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  onChange={(e) =>
+                    setDetails({ ...Details, email: e.target.value })
+                  }
+                  value={Details.email}
+                />
+              </div>
+              <div className="inputbox">
+                <label htmlFor="password">Password:</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  onChange={(e) =>
+                    setDetails({ ...Details, password: e.target.value })
+                  }
+                  value={Details.password}
+                />
+              </div>
+              <div className="inputbox">
                 <input
                   type="submit"
                   value="LOGIN"
                   onClick={handleClick}
                 ></input>
-                </div>
+              </div>
             </form>
           </div>
         </div>
