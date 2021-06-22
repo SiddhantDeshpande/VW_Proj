@@ -19,9 +19,9 @@ function Footer() {
                 <strong>Email:</strong> siddhant.volkswagen.co.in<br/>
               </p>
               <div className="social-links mt-3">
-                <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-                <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                <a href="https://www.behance.net/siddhandeshpan" className="instagram"><i className="bx bxl-behance"></i></a>
+                <a href="https://github.com/SiddhantDeshpande" className="google-plus"><i className="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/siddhant-deshpande-0b27581b3" className="linkedin"><i className="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>

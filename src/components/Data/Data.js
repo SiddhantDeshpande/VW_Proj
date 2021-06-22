@@ -103,17 +103,20 @@ export const allMentors = [
     Mentorname: "Swati Sharma",
     Mentortitle: "Mentor1",
     Mentorimg: "",
+    linkedin: "https://www.linkedin.com/in/swati-sharma-a4950156/",
   },
   {
     Mentorname: "Avinash Saini",
     Mentortitle: "Software Engineer at VWITS",
     Mentorimg:
       "https://ca.slack-edge.com/E01GZSTQXMY-UR98YT6UQ-185a2d3c36c4-512",
+    linkedin: "https://www.linkedin.com/in/avinash-saini-49b75611a/",
   },
   {
     Mentorname: "Sanket Chaudhary",
     Mentortitle: "UX / Interaction / Product Designer at VWITS",
-    Mentorimg: "assets/img/Sanket sir.jpeg",
+    Mentorimg: "/assets/img/Sanket sir.jpeg",
+    linkedin: "https://www.linkedin.com/in/sanket-choudhary-a64baab8/",
   },
 ];
 
@@ -141,7 +144,7 @@ export const alltasks = [
     Taskproject: "PRN Wiki",
     Taskdesc:
       "This was one of my UX oriented tasks which involved the use of the design tool 'Sketch'. This task was done as a part of the PRN Wiki Project . The goal of this was to create a design system for future reference and easy access to symbols , thus improving the design efficiency . It involved creating and arranging symbols in an easily accessible manner , and prototyping the design according to individual user flows. The symbols created can be accessed easily and in turn improves the overall speed and efficiency of the design process. This task also involved creating user stories according to the individual users who were the target group for this project.The protoyping was done using the craft tool. I was under my senior Sanket Chaudhary for this task . ",
-    Taskimg: "assets/img/sample_design.png",
+    Taskimg: "/assets/img/sample_design.png",
   },
   {
     Taskname: "Wireframe Development",
@@ -149,6 +152,6 @@ export const alltasks = [
     Taskproject: "PRN Wiki",
     Taskdesc:
       "this task was the first test of my knowledge about ReactJs ! I had been learning ReactJS for a month and this was my first time using it to develop something. This task involved development of a wireframe of PRN Wiki project . The requirements were that it should follow the ReactJS norms , that is everything should be made of components to improve efficiency and that the site should be responsive. This task was done under the supervision of my mentor Swati Sharma . After a few errors I successfully developed the wireframe as per the requirements using ReactJS and css ( to handle the responsive part ) ",
-    Taskimg: "assets/img/Wireframe.png",
+    Taskimg: "/assets/img/Wireframe.png",
   },
 ];

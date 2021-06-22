@@ -14,7 +14,7 @@ function Mentor() {
 
           <div className="row">
             {allMentors.map((item, i) => (
-              <div className="col-lg-4 col-md-6">
+              <div key={i} className="col-lg-4 col-md-6">
                 <div className="member" data-aos="zoom-in" data-aos-delay="100">
                   <img src={allMentors[i].Mentorimg} className="img-fluid" alt="" />
                   <div className="member-info">
@@ -23,7 +23,7 @@ function Mentor() {
                       <span>{allMentors[i].Mentortitle}</span>
                     </div>
                     <div className="social">
-                      <a href="">
+                      <a href={allMentors[i].linkedin}>
                         <i className="bi bi-linkedin"></i>
                       </a>
                     </div>
